@@ -99,12 +99,11 @@ nav ul li a span.active {
   background-color: #171717;
 }
 .calculator .input {
-  text-align: center;
   width: 100%;
   border-bottom: 1px dotted #FFFFFF;
 }
 .calculator .input input {
-  padding: 32px;
+  width: 100%;
   background-color: #171717;
   border: none;
   font-size: 32px;

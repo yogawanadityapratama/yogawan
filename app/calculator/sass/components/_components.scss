@@ -63,11 +63,10 @@ nav {
     border-radius: 50px;
     background-color: $darkwhite;
     .input {
-        text-align: center;
         width: 100%;
         border-bottom: 1px dotted $light;
         input {
-            padding: 32px;
+            width: 100%;
             background-color: $darkwhite;
             border: none;
             font-size: 32px;
