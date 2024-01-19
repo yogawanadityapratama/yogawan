@@ -73,12 +73,12 @@ nav ul li a span {
   border-radius: 100px;
 }
 nav ul li a span:hover {
-  color: #FFFFFF;
-  background-color: #0048FF;
+  color: #171717;
+  background-color: #DDDDDD;
 }
 nav ul li a span.active {
-  color: #FFFFFF;
-  background-color: #0048FF;
+  color: #171717;
+  background-color: #DDDDDD;
 }
 
 .hero {
@@ -86,42 +86,16 @@ nav ul li a span.active {
 }
 .hero .button a {
   padding: 24px 32px;
-  background-color: #0048FF;
+  background-color: #DDDDDD;
+  color: #171717;
   border-radius: 100px;
   text-decoration: none;
-}
-
-table {
-  padding: 32px;
-  background-color: #171717;
-  width: 100%;
-  border-radius: 44px;
-}
-table thead tr th {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: auto;
-  padding-right: auto;
-  border-bottom: 1px dotted #0048FF;
-}
-table tbody tr td {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
-}
-table tbody tr td.active {
-  background-color: #0048FF;
-  border-radius: 100px;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
+  padding: 32px;
 }
 .navigation .button {
   display: flex;
@@ -137,85 +111,92 @@ table tbody tr td.active {
   background-color: transparent;
 }
 
+table {
+  padding: 32px;
+  background-color: #171717;
+  width: 100%;
+  border-radius: 44px;
+}
+table thead tr th {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: auto;
+  padding-right: auto;
+  border-bottom: 1px dotted #DDDDDD;
+}
+table tbody tr td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  transition: background-color 3s color 3s;
+}
+table tbody tr td.active {
+  background-color: #DDDDDD;
+  color: #000000;
+  border-radius: 100px;
+}
+table tbody tr td:hover {
+  background-color: #DDDDDD;
+  color: #000000;
+  border-radius: 100px;
+}
+
 .footer {
   height: fit-content;
-  padding: 32px;
+  border-top: 1px dotted #FFFFFF;
+  border-bottom: 1px dotted #FFFFFF;
+  border-left: 1px dotted #FFFFFF;
+  border-right: 1px dotted #FFFFFF;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .footer .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  margin-top: 44px;
 }
-.footer .nav .left {
+.footer .nav .nav-content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-.footer .nav .left li {
   list-style: none;
-  margin-bottom: 16px;
 }
-.footer .nav .left li a {
-  padding: 6px 12px;
-  border: 1px dotted #FFFFFF;
-  border-radius: 100px;
-  text-decoration: none;
+.footer .nav .nav-content img {
+  border: 1px dotted #171717;
 }
-.footer .nav .center {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-.footer .nav .center li {
-  list-style: none;
-  margin-bottom: 16px;
-}
-.footer .nav .center li a {
-  padding: 6px 12px;
-  border: 1px dotted #FFFFFF;
-  border-radius: 100px;
-  text-decoration: none;
-}
-.footer .nav .right {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-.footer .nav .right li {
-  list-style: none;
-  margin-bottom: 16px;
-}
-.footer .nav .right li a {
-  padding: 6px 12px;
-  border: 1px dotted #FFFFFF;
+.footer .nav .nav-content a {
+  border: 1px dotted #171717;
+  color: #171717;
+  padding: 12px;
   border-radius: 100px;
   text-decoration: none;
 }
 .footer .image {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-top: 32px;
 }
 .footer .button {
-  margin-bottom: 16px;
-}
-.footer .button li {
   display: flex;
   justify-content: center;
+  margin-top: 32px;
+  list-style: none;
 }
-.footer .button li a {
-  padding: 6px 12px;
-  border: 1px dotted #FFFFFF;
+.footer .button a {
+  border: 1px dotted #171717;
+  color: #171717;
+  padding: 12px;
   border-radius: 100px;
 }
 .footer .name {
   display: flex;
   justify-content: center;
-  border-bottom: 1px dotted #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.footer .name .display {
+  color: #171717;
 }
 
 /*# sourceMappingURL=styles.css.map */
