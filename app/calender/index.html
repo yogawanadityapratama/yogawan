@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/calender/sass/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+    <title>Calender</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/app/calender/index.html">
+                    <span class="material-symbols-outlined active">
+                        calendar_month
+                    </span>
+                    <p class="paragraph">Calender</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/app/calculator/index.html">
+                    <span class="material-symbols-outlined">
+                        calculate
+                    </span>
+                    <p class="paragraph">Calculator</p>
+                 </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        escalator_warning
+                    </span>
+                    <p class="paragraph">Age Calculator</p>
+                 </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        hourglass_top
+                    </span>
+                    <p class="paragraph">Countdown</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/">
+                    <span class="material-symbols-outlined">
+                        lists
+                    </span>
+                    <p class="paragraph">To-Do List</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p class="paragraph">Home</p>
+                 </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <br><br><div><span class="display">Calender</span></div>
+        <br><div class="span paragraph">Experience a Personal Touch in Every Day with Calender User-Friendly UI Design</div>
+        <br><br><div class="button"><a href="#bottom" class="label">Get in Touch</a></div>
+    </div>
+    <div class="navigation">    
+        <button class="label" id="month-year">Month and Years</button>
+        <div class="button">
+            <button class="label" onclick="previousMonth()">Previous</button>
+            <button class="label" onclick="nextMonth()">Next</button>
+        </div>
+    </div>
+    <table id="calendar">
+        <thead class="label">
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody class="label">
+        </tbody>
+    </table>
+    <div class="footer">
+        <div class="nav">
+            <div class="nav-content">
+                <li><a href="#" class="label"><img style="width: 100px; border-radius: 100px;" src="/app/calculator/src/img/logo.png" alt="img"></a></li>
+                <li><a href="#" class="label">YOGA</a></li>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/app/calender/src/img/line.png" alt="line">
+        </div>
+        <div class="button">
+            <li><a href="https://www.instagram.com/yogawanadityapratama/" class="label">Get in Touch</a></li>
+        </div>
+        <div class="name">
+            <div class="display">YOGA©</div>
+        </div>
+    </div>
+    <div id="bottom"></div>
+    <script src="/app/calender/src/js/scripts.js"></script>
+</body>
+</html>

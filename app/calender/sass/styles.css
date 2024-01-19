@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.display {
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.heading {
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.paragraph {
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.label {
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+
+nav {
+  margin: 0;
+  padding: 32px;
+  background-color: #171717;
+  border-radius: 0 0 44px 44px;
+}
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+nav ul li a span {
+  color: #FFFFFF;
+  padding: 16px;
+  border-radius: 100px;
+}
+nav ul li a span:hover {
+  color: #171717;
+  background-color: #DDDDDD;
+}
+nav ul li a span.active {
+  color: #171717;
+  background-color: #DDDDDD;
+}
+
+.hero {
+  padding: 32px;
+}
+.hero .button a {
+  padding: 24px 32px;
+  background-color: #DDDDDD;
+  color: #171717;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.navigation .button {
+  display: flex;
+  justify-content: center;
+}
+.navigation .button button {
+  padding: 16px 24px;
+  border: 1px dotted #FFFFFF;
+  border-radius: 100px;
+}
+.navigation button {
+  border: none;
+  background-color: transparent;
+}
+
+table {
+  padding: 32px;
+  background-color: #171717;
+  width: 100%;
+  border-radius: 44px;
+}
+table thead tr th {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: auto;
+  padding-right: auto;
+  border-bottom: 1px dotted #DDDDDD;
+}
+table tbody tr td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  transition: background-color 3s color 3s;
+}
+table tbody tr td.active {
+  background-color: #DDDDDD;
+  color: #000000;
+  border-radius: 100px;
+}
+table tbody tr td:hover {
+  background-color: #DDDDDD;
+  color: #000000;
+  border-radius: 100px;
+}
+
+.footer {
+  height: fit-content;
+  border-top: 1px dotted #FFFFFF;
+  border-bottom: 1px dotted #FFFFFF;
+  border-left: 1px dotted #FFFFFF;
+  border-right: 1px dotted #FFFFFF;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.footer .nav {
+  margin-top: 44px;
+}
+.footer .nav .nav-content {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footer .nav .nav-content img {
+  border: 1px dotted #171717;
+}
+.footer .nav .nav-content a {
+  border: 1px dotted #171717;
+  color: #171717;
+  padding: 12px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.footer .image {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.footer .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  list-style: none;
+}
+.footer .button a {
+  border: 1px dotted #171717;
+  color: #171717;
+  padding: 12px;
+  border-radius: 100px;
+}
+.footer .name {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.footer .name .display {
+  color: #171717;
+}
+
+/*# sourceMappingURL=styles.css.map */
