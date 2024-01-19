@@ -99,8 +99,8 @@ nav ul li a span.active {
   background-color: #171717;
 }
 .calculator .input {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: 100%;
   border-bottom: 1px dotted #FFFFFF;
 }
 .calculator .input input {
