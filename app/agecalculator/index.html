@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/agecalculator/sass/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+    <title>Calender</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/app/calender/">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <p class="paragraph">Calender</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/app/calculator/">
+                    <span class="material-symbols-outlined">
+                        calculate
+                    </span>
+                    <p class="paragraph">Calculator</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/app/agecalculator/">
+                    <span class="material-symbols-outlined active">
+                        escalator_warning
+                    </span>
+                    <p class="paragraph">Age Calculator</p>
+                 </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        hourglass_top
+                    </span>
+                    <p class="paragraph">Countdown</p>
+                 </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        lists
+                    </span>
+                    <p class="paragraph">To-Do List</p>
+                 </a>
+            </li>
+            <li>
+                <a href="/">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p class="paragraph">Home</p>
+                 </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <br><br><div><span class="display">Age Calculator</span></div>
+        <br><div class="span paragraph">Experience a Personal Touch in Every Day with Calender User-Friendly UI Design</div>
+        <br><br><div class="button"><a href="#bottom" class="label">Get in Touch</a></div>
+    </div>
+    <div class="age">
+        <div class="age-content">
+            <h1 class="heading">Age Calculator</h1>
+            <div class="age-content-wrapper">
+                <input type="datetime-local" id="dob" value="2000-01-01T00:00">
+                <button class="paragraph" onclick="calculateAge()">Cek</button>
+            </div>
+        </div>
+        <p class="paragraph" id="result"></p>
+    </div>
+    <div class="footer">
+        <div class="nav">
+            <div class="nav-content">
+                <li><a href="#" class="label"><img style="width: 100px; border-radius: 100px;" src="/app/agecalculator/src/img/logo.png" alt="img"></a></li>
+                <li><a href="#" class="label">YOGA</a></li>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/app/agecalculator/src/img/line.png" alt="line">
+        </div>
+        <div class="button">
+            <li><a href="https://www.instagram.com/yogawanadityapratama/" class="label">Get in Touch</a></li>
+        </div>
+        <div class="name">
+            <div class="display">YOGA©</div>
+        </div>
+    </div>
+    <div id="bottom"></div>
+    <script src="/app/agecalculator/src/js/scripts.js"></script>
+</body>
+</html>
