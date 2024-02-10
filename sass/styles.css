@@ -1,5 +1,6 @@
 @media only screen and (max-width: 767px) {
   :root {
+    --nav: 64px;
     --display-size: 72px;
     --display-line-height: 72px;
     --heading1-size: 64px;
@@ -12,6 +13,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   :root {
+    --nav: 96px;
     --display-size: 96px;
     --display-line-height: 96px;
     --heading1-size: 72px;
@@ -24,6 +26,7 @@
 }
 @media only screen and (min-width: 992px) {
   :root {
+    --nav: 128px;
     --display-size: 128px;
     --display-line-height: 128px;
     --heading1-size: 96px;
@@ -40,6 +43,23 @@
   padding-left: 12px;
   padding-right: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.hero .profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.hero .profile-container .profile {
+  width: 267px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  padding-right: 24px;
+}
+.hero .profile-container .profile p {
+  margin-top: 0;
 }
 .hero h1 {
   color: #FFFFFF;
@@ -123,6 +143,7 @@
 }
 .works .card img {
   animation: scroll 20s linear infinite;
+  z-index: -1;
 }
 .works .button a {
   text-decoration: none;

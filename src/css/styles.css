@@ -4,10 +4,64 @@
     cursor: url('/src/image/cursor.png'), auto;
 }
 
+@media only screen and (max-width: 767px) {
+    :root {
+        --nav: 64px;
+
+        --display-size: 72px;
+        --display-line-height: 72px;
+    
+        --heading1-size: 64px;
+        --heading1-line-height: 64px:
+
+        --heading2-size: 24px;
+        --heading2-line-height: 24px;
+
+        --paragraph-size: 16px;
+        --paragraph-line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --nav: 96px;
+
+        --display-size: 96px;
+        --display-line-height: 96px;
+    
+        --heading1-size: 72px;
+        --heading1-line-height: 72px:
+
+        --heading2-size: 32px;
+        --heading2-line-height: 32px;
+
+        --paragraph-size: 16px;
+        --paragraph-line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        --nav: 128px;
+
+        --display-size: 128px;
+        --display-line-height: 128px;
+    
+        --heading1-size: 96px;
+        --heading1-line-height: 96px:
+
+        --heading2-size: 64px;
+        --heading2-line-height: 64px;
+
+        --paragraph-size: 16px;
+        --paragraph-line-height: 24px;
+    }
+}
+
 body {    
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background: linear-gradient(180deg, #000000 0%, #004297 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,7 +75,7 @@ body {
 
 .menu-btn__burger {
     padding: 6px;
-    background-color: #000000;
+    background-color: transparent;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
@@ -65,13 +119,14 @@ body {
 /* Animation for menu items */
 .menu__item {
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .menu__item a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: var(--nav);
+
 }
 
 .menu__item {
@@ -106,6 +161,10 @@ body {
 
 .menu__item.contact.animated {
     animation: fadeIn 0.5s ease 0.6s forwards;
+}
+
+.nav-menu__list {
+    padding: 0;
 }
 
 @keyframes fadeIn {
