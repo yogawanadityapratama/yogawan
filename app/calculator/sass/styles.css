@@ -133,10 +133,9 @@ nav ul li a span.active {
   border-bottom: 1px dotted #FFFFFF;
   border-left: 1px dotted #FFFFFF;
   border-right: 1px dotted #FFFFFF;
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
   background-color: #FFFFFF;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 .footer .nav {
   margin-top: 44px;
@@ -146,11 +145,7 @@ nav ul li a span.active {
   justify-content: center;
   list-style: none;
 }
-.footer .nav .nav-content img {
-  border: 1px dotted #171717;
-}
 .footer .nav .nav-content a {
-  border: 1px dotted #171717;
   color: #171717;
   padding: 12px;
   border-radius: 100px;
@@ -176,11 +171,15 @@ nav ul li a span.active {
 .footer .name {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
+  height: 512px;
+  overflow: hidden;
 }
 .footer .name .display {
   color: #171717;
+  font-size: 512px;
 }
 
 /*# sourceMappingURL=styles.css.map */

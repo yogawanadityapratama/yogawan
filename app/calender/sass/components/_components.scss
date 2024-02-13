@@ -122,21 +122,16 @@ table {
     border-bottom: 1px dotted $light;
     border-left: 1px dotted $light;
     border-right: 1px dotted $light;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
     background-color: $light;
     margin-top: 32px;
-    margin-bottom: 32px;
     .nav {
         margin-top: 44px;
         .nav-content {
             display: flex;
             justify-content: center;
             list-style: none;
-            img {
-                border: 1px dotted $darkwhite;
-            }
             a {
-                border: 1px dotted $darkwhite;
                 color: $darkwhite;
                 padding: 12px;
                 border-radius: 100px;
@@ -148,7 +143,6 @@ table {
         display: flex;
         justify-content: center;
         margin-top: 32px;
-
     }
     .button {
         display: flex;
@@ -165,10 +159,14 @@ table {
     .name {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 32px;
         margin-bottom: 32px;
+        height: 512px;
+        overflow: hidden;
         .display {
             color: $darkwhite;
+            font-size: 512px;
         }
     }
 }

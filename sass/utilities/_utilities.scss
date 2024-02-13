@@ -147,22 +147,30 @@
         color: #BEBEBE;
         margin: 0;
     }
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-    .card {
+    // @keyframes scroll {
+    //     0% {
+    //         transform: translateX(0);
+    //     }
+    //     100% {
+    //         transform: translateX(-100%);
+    //     }
+    // }
+    .card-container {
         display: flex;
-        overflow: scroll;
-        img {
-            animation: scroll 20s linear infinite;
-            z-index: -1;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        a {
+            margin-bottom: 64px;
+            img {
+                width: 100%;
+            }
+            transition: transform 0.3s ease-in-out;
         }
+        a:hover {
+            transform: scale(1.05);
+          }
     }
+
     .button {
         a {
             text-decoration: none;
@@ -173,4 +181,10 @@
             text-align: center;
         }
     }
+}
+
+.card-scroll {
+    display: flex;
+    overflow: scroll;
+    margin-top: 64px;
 }

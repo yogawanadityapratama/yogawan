@@ -7,6 +7,7 @@
 @media only screen and (max-width: 767px) {
     :root {
         --nav: 64px;
+        --nav-hover: 96px;
 
         --display-size: 72px;
         --display-line-height: 72px;
@@ -25,6 +26,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     :root {
         --nav: 96px;
+        --nav-hover: 128px;
 
         --display-size: 96px;
         --display-line-height: 96px;
@@ -43,6 +45,7 @@
 @media only screen and (min-width: 992px) {
     :root {
         --nav: 128px;
+        --nav-hover: 156px;
 
         --display-size: 128px;
         --display-line-height: 128px;
@@ -137,14 +140,14 @@ body {
 .menu__item a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 96px;
+    font-size: var(--nav);
     font-weight: 500;
     transition: font-size 0.3s ease;
 }
 
 .menu__item a:hover {
     opacity: 50%;
-    font-size: 128px;
+    font-size: var(--nav-hover);
 }
 
 .menu__item.home.animated {
@@ -177,3 +180,58 @@ body {
         transform: translateY(0);
     }
 }
+
+.footer {
+    height: fit-content;
+    border-top: 1px dotted #FFFFFF;
+    border-bottom: 1px dotted #FFFFFF;
+    border-left: 1px dotted #FFFFFF;
+    border-right: 1px dotted #FFFFFF;
+    border-radius: 50px 50px 0 0;
+    background-color: #FFFFFF;
+    margin-top: 32px;
+  }
+  .footer .nav {
+    margin-top: 44px;
+  }
+  .footer .nav .nav-content {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .footer .nav .nav-content a {
+    color: #171717;
+    padding: 12px;
+    border-radius: 100px;
+    text-decoration: none;
+  }
+  .footer .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .footer .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    list-style: none;
+  }
+  .footer .button a {
+    border: 1px dotted #171717;
+    color: #171717;
+    padding: 12px;
+    border-radius: 100px;
+  }
+  .footer .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 512px;
+    overflow: hidden;
+  }
+  .footer .name .display {
+    color: #171717;
+    font-size: 512px;
+  }
